@@ -4,12 +4,12 @@
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #ff9a8b;
-  background: linear-gradient(135deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+  background: #FFF5E4;
+  background: linear-gradient(135deg, #FFF5E4 0%, #C1D8C3 55%, #FFF5E4 100%);
 }
 
 .comic-login-card {
-  background: #ffcc00;
+  background: #CD5C08;
   border: 4px solid #000;
   border-radius: 15px;
   padding: 20px;
@@ -39,8 +39,8 @@
 }
 
 .login-btn {
-  background: #f77f00;
-  color: #fff;
+  background: #FFF5E4;
+  color: black;
   border: 3px solid #000;
   border-radius: 10px;
   padding: 10px;
@@ -50,7 +50,7 @@
 }
 
 .login-btn:hover {
-  background: #d62828;
+  background: #C1D8C3;
 }
 
 .card-footer {
@@ -63,11 +63,11 @@
 }
 
 .card-footer a {
-  color: #f77f00;
+  color: #FFF5E4;
   text-decoration: none;
   font-weight: bold;
 }
 
 .card-footer a:hover {
-  color: #d62828;
+  color: #C1D8C3;
 }

@@ -26,7 +26,7 @@ export class LoginComponent {
           // Save the token to localStorage
           localStorage.setItem("token", res.data.token);
           // Navigate to the dashboard
-          this.router.navigateByUrl("dashboard");
+          this.router.navigateByUrl("layout");
         } else {
           // Show alert if login fails
           alert("Check User Name or Password");
