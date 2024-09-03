@@ -1,0 +1,26 @@
+<section class="background-login">
+  <div class="comic-login-card">
+    <div class="card-header">
+      <h2>Login</h2>
+    </div>
+    <form class="card-body">
+      <input
+        type="username"
+        name="username"
+        [(ngModel)]="loginObj.username"
+        placeholder="Username"
+        class="email"
+      />
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="loginObj.password"
+        placeholder="Password"
+      />
+      <button type="submit" (click)="onLogin()" class="login-btn">Login</button>
+    </form>
+    <div class="card-footer">
+      <p>Don't have an account? <a href="register">Sign up</a></p>
+    </div>
+  </div>
+</section>
