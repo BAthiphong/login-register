@@ -1,7 +1,17 @@
 <section class="background-login">
   <div class="comic-login-card">
     <div class="card-header">
-      <h2>Logout</h2>
+      <h2>User</h2>
+    </div>
+    <div>
+      <div class="login-btn" style="margin-top: 16px;">
+        <p> Username </p>
+        <p> {{user.username }} </p>
+      </div>
+      <div class="login-btn" style="margin-top: 16px;">
+        <p> Email </p>
+        <p> {{user.email }} </p>
+      </div>
     </div>
     <div class="card-body">
       <button (click)="logout()" class="login-btn">Logout</button>

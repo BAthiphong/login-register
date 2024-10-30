@@ -13,18 +13,19 @@ import { Router } from '@angular/router';
 export class LoginComponent {
   
   loginObj: any = {
-    username: '',
+    usernameOrEmail: '',
     password: '',
   };
 
   constructor(private http: HttpClient, private router: Router) {}
 
   onLogin() {
-    this.http.post("http://localhost:3000/login", this.loginObj).subscribe(
+    this.http.post("http://localhost:3000/auth/login", this.loginObj).subscribe(
       (res: any) => {
         if (res.result) {
           // Save the token to localStorage
           localStorage.setItem("token", res.data.token);
+          localStorage.setItem("user", JSON.stringify(res.data.user))
           // Navigate to the dashboard
           this.router.navigateByUrl("layout");
         } else {

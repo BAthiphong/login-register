@@ -17,7 +17,7 @@ export class RegisterComponent {
     email: '',
   };
 
-  private apiUrl = 'http://localhost:3000/register';
+  private apiUrl = 'http://localhost:3000/users/register';
 
   errorMessage: string | null = null;
   successMessage: string | null = null;
@@ -31,7 +31,8 @@ export class RegisterComponent {
       this.registerObj.email
     ) {
       this.http.post(this.apiUrl, this.registerObj).subscribe((res: any) => {
-        if (res.result) {
+        debugger;
+        if (res) {
           alert('register successful');
           this.router.navigateByUrl("login");
         } else {
